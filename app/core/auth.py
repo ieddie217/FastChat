@@ -1,5 +1,5 @@
 import jwt
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Optional, List, Dict
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
@@ -13,7 +13,7 @@ DEMO_USERS: Dict[str, Dict] = {
 }
 
 def create_access_token(sub: str, roles: Optional[List[str]] = None, minutes: int = settings.JWT_EXPIRE_MIN) -> str:
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     payload = {
         "sub": sub,
         "roles": roles or [],

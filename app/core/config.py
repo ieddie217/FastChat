@@ -4,6 +4,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict  # <-- v2 style
 
 class Settings(BaseSettings):
     # Azure OpenAI
+    DEBUG_AUDIT: bool = False
+
     ENDPOINT: str
     KEY: str
     API_VERSION: str = "2024-12-01-preview"

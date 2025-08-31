@@ -6,3 +6,5 @@ pydantic
 pydantic-settings
 httpx
 openai
+python-json-logger
+python-multipart

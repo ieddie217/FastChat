@@ -24,6 +24,14 @@ async def http_access_middleware(request: Request, call_next):
         if resp is not None:
             resp.headers["X-Request-ID"] = req_id
         log.info(
-            f'req_id={req_id} ip={client_ip} {method} {path} '
-            f'status={status} elapsed_ms={elapsed_ms:.1f} ua="{ua}"'
+            "request",
+            extra={
+                "req_id": req_id,
+                "client_ip": client_ip,
+                "method": method,
+                "path": path,
+                "status": status,
+                "elapsed_ms": elapsed_ms,
+                "user_agent": ua,
+            },
         )
