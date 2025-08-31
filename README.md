@@ -75,3 +75,8 @@ app/
 ├── services/             # Azure OpenAI client
 └── main.py               # App factory & router registration
 ```
+
+##Todo
+Implement Front-End
+RAG
+Dockerize
