@@ -79,4 +79,6 @@ app/
 ##Todo
 Implement Front-End
 RAG
+Add Redis caching for faster responses
+Add Docker support for containerized deployments
 Dockerize
