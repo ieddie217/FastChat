@@ -75,11 +75,3 @@ app/
 ├── services/             # Azure OpenAI client
 └── main.py               # App factory & router registration
 ```
-
-## 📝 License
-
-[Add your license here]
-
-## 🤝 Contributing
-
-[Add contributing guidelines here]
