@@ -1,3 +1,22 @@
-.env
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
 venv/
+.env
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Logs
 logs/
+*.log
+
+# Coverage / pytest
+.coverage
+htmlcov/
+
+# Docker
+*.local.yml
