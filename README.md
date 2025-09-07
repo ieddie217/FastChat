@@ -2,7 +2,7 @@
 
 A production-ready **FastAPI** backend with **JWT authentication**, **async Azure OpenAI** integration, and **structured + audit logging**. Built to power a chat UI (e.g., Next.js).
 
-## ✨ Features
+## ✨ Features 
 
 - **FastAPI** with async endpoints
 - **JWT** login and protected routes
